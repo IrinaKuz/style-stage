@@ -1,0 +1,192 @@
+/*
+ * [Modified] Modern CSS Reset
+ * @link https://github.com/hankchizljaw/modern-css-reset
+*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Make images easier to work with */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+article, aside{
+  margin: 3rem 0;
+}
+
+section{
+  padding: 1rem;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+h1, h2{
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 0.4rem 0;
+}
+/* Header */ 
+header{
+  padding: 150px 0;
+}
+h1{
+  font-size: 5em;
+}
+h2{
+  text-align: center;
+}
+.skip-link{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header p{
+  position: absolute;
+  top: 0;
+  right: 50px;
+  margin-top: 0;
+}
+header .link-github{
+  position: absolute;
+  top: 32px;
+  right: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+header .link-github svg{
+  width: 50px;
+  height: auto;
+}
+/* Nav */
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background-color: white;
+}
+nav ul{
+  padding: 0;
+  list-style: none;
+  display: flex;
+  border-bottom: 5px solid black;
+}
+nav ul li{
+  flex: 1 0 auto;
+  border-left: 2em solid black;
+  padding-left: 10px;
+}
+nav ul li:hover{
+  background-color: black;
+  color: white;
+}
+nav a{
+  text-decoration: none;
+  font-size: 1.4em;
+  color: black;
+  font-weight: bold;
+  color: inherit;
+}
+/* Main */
+main{
+  float: left;
+  width: 80%;
+  padding: 1rem;
+}
+/* About article */
+#about{
+  display: flex;
+  flex-direction: row-reverse;
+}
+#about h2{
+  background-color: black;
+  color: white;
+}
+#about .container:first-child{
+  width: 70%;
+  border-right: 2px solid black;
+}
+#about .container:last-child{
+  width: 30%;
+}
+#about ul{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0 20px 20px;
+  background-color: black;
+  color: white;
+  list-style: none;
+}
+#about ul li{
+  font-weight: bold;
+  margin-right: 10px;
+}
+#about li::after{
+  content: '\02218';
+  padding-left: 10px;
+}
+
+/* Aside */
+aside{
+  text-align: center;
+  width: 20%;
+  margin-top: 3rem;
+  float: left;
+  padding: 1rem;
+}
+.profile ul{
+  flex-direction: column;
+}
+#styles li{
+  background-color: black;
+  color: white;
+  padding: 1em 0;
+  margin-left: 5px;
+}
+footer{
+  clear: both;
+}
